@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(32, 10, 32);
+}
+#canvas {
+  margin: 30px;
+  background-color: rgb(247, 201, 237);
+  border-radius: 25px;
+  border: 5px solid rgb(32, 10, 32);
+}
