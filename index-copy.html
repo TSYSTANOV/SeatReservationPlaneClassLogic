@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Выбери тур для отдыха</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="js/index.js" type="module"></script>
+  <link rel="stylesheet" href="style/index.css">
 </head>
 
 <body>
@@ -15,10 +14,24 @@
 
     <h1 class="title">Выберите тур</h1>
     <main class="person-data">
-   
+      <form class="field">
+        <label class="field__label">Укажите количество человек (max: 6)</label>
+        
+        <select class="field__select" id="tour" name="tour">
+          <option value="1">Мальдивы</option>
+          <option value="2">Индия</option>
+          <option value="3">Египет</option>
+          <option value="4">Турция</option>
+          <option value="5">Сочи</option>
+        </select>
+        
+        <input class="field__input" id="count" name="count" type="number" placeholder="#" min="1" max="6" required="">
+        
+        <button class="btn-confirm" type="submit">Подтвердить</button>
+      </form>
     </main>
 
-    <!-- <main class="person-data">
+    <main class="person-data">
       <form class="person">
         <h2 class="person__title">Пассажир #1</h2>
         
@@ -34,9 +47,9 @@
         
         <button class="btn-confirm" type="submit">Подтвердить</button>
       </form>
-    </main> -->
+    </main>
     
-    <!-- <main class="person-data">
+    <main class="person-data">
       <form class="choises-seat">
         <fieldset class="plane" name="plane">
           <div class="cockpit">
@@ -309,7 +322,7 @@
           <div class="exit fuselage"></div>
         </fieldset>
       </form>
-    </main> -->
+    </main>
   </div>
 
 </body>
