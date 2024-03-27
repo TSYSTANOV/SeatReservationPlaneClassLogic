@@ -20,7 +20,7 @@ class AirPlane {
     this.boockedPlaces = LOCAL_STORAGE_component.getItem(
       PassengersData[0].tourID
     ).map((elem) => elem.seat);
-    console.log(scheme);
+
     const planeFuselage = this.createPlaneFuselage(scheme);
 
     const form = document.createElement("form");
@@ -124,7 +124,6 @@ class AirPlane {
             }
           }
         }
-        console.log(this.checkedPlaces);
       }
     });
   }
@@ -146,6 +145,7 @@ class AirPlane {
         `Спасибо, Ваши места ${this.checkedPlaces.join(", ")}`
       );
       this.checkedPlaces = [];
+      this.boockedPlaces = [];
       setTimeout(() => {
         TOUR_component.renderForm();
       }, 2000);
